@@ -246,31 +246,111 @@
             <div class="cnt-center">
                 <div class="cnt-left">
                     <div class="cnt-form">
-                        <div class="form"></div>
-                            <div class="div1">
-                                <label for="name">Full name<span class="cnt-red">*</span></label>
-                                <input type="text" name="name" placeholder="Enter your full name">
+                        <div class="form-duble">
+                            <div class="fm-one name">
+                                <label for="name">Full name</label>
+                                <input type="text" name="name" placeholder="Enter your full name" required>
                             </div>
-                            <div class="div2">
-                                <label for="name">Phone number<span class="cnt-red">*</span></label>
-                                <input type="tel" name="phone" placeholder="Enter your phone number">
+                            <div class="fm-one phone">
+                                <label for="name">Phone number</label>
+                                <input type="tel" name="phone" placeholder="Enter your phone number" required>
                             </div>
-                            <div class="div3">
-                                <label for="name">Email<span class="cnt-red">*</span></label>
-                                <input type="email" name="email" placeholder="Enter your email">
-                            </div>
-                            <div class="div4"></div>
-                            <div class="div5"></div>
-                            <div class="div6"></div>
                         </div>
+                        <div class="fm email">
+                            <label for="name">Email</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="fm select">
+                            <label for="select">What is your enquiry about?</label>
+                            <select required>
+                                <option value="123">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                        </div>
+                        <div class="fm massege">
+                            <label for="massege">Additional information</label>
+                            <input type="text" name="massege" style="display: flex;justify-content: start;height: 144px;align-items: flex-start;" placeholder="Your message" required>
+                        </div>
+                        <div class="form-submit"><input type="submit" value="Send Message"></div>
                     </div>
                 </div>
                 <div class="cnt-right">
-                    
+                    <h2>Get in touch to schedule a visit to your new house.</h2>
+                    <h5>Kindly fill this form with your details about your inquiries and we would respond your inquiry shortly.</h5>
+                    <div class="mail">
+                        <b>Send an email</b>
+                        <p>contact@ecohavenrealty.com</p>
+                    </div>
+                    <div class="tel">
+                        <b>Give us a call</b><br>
+                        <p>+234905 121 8127</p>
+                    </div>
+                    <div class="map">
+                        <b>Office address</b><br>
+                        <p>11,Odo-Olowu, Ijeshatedo B/Stop, Surulere</p>
+                    </div>
+                    <div class="clock">
+                        <b>Working hours</b><br>
+                        <p>Mon - Sat: 10am - 4pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cta">
+            <div class="cta-screen">
+                <div class="screen-label">
+                    <div class="label-center">
+                        <h2>Ready to find your eco-friendly home? </h2>
+                        <h5>We have homes in 20+ cities across the country to choose from!</h5>
+                        <div class="btn-center"><a href="#" class="btn">Browse homes</a></div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <div id="footer">
+            <div class="f-social">
+                <div class="column">
+                    <a href="#"><img src="/css/img/logo.svg" alt="EcoHaven Realty" class="logo"></a>
+                    <div class="social">
+                        <div class="facebook"><a href="#"><img src="/css/img/Frame 40.svg" alt=""></a></div>
+                        <div class="facebook"><a href="#"><img src="/css/img/Frame 41.svg" alt=""></a></div>
+                        <div class="facebook"><a href="#"><img src="/css/img/Frame 42.svg" alt=""></a></div>
+                        <div class="facebook"><a href="#"><img src="/css/img/Frame 43.svg" alt=""></a></div>
+                    </div>
+                    <a href="#" class="f-button">Contact Us</a>
+                </div>
+            </div>
+            <div class="f-nav">
+                <div class="column">
+                    <b><a href="#">Navigation</a></b>
+                    <a id="nav" href="#">Company</a>
+                    <a id="nav" href="#">Home</a>
+                    <a id="nav" href="#">Contact Us</a>
+                    <a id="nav" href="#">Blog</a>
+                    <a id="nav" href="#">Properties</a>
+                </div>
+            </div>
+            <div class="f-company">
+                <div class="column">
+                    <b><a href="#">Company</a></b>
+                    <a id="nav" href="#">About us</a>
+                    <a id="nav" href="#">Our mission and vision</a>
+                    <a id="nav" href="#">Our team</a>
+                </div>
+            </div>
+            <div class="f-support">
+                <div class="column">
+                    <b><a href="#">Support</a></b>
+                    <a id="nav" href="#">Contact us</a>
+                    <a id="nav" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Copyright 2022. All rights reserved</div>
+    </footer>
 </body>
 
 </html>
