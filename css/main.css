@@ -6,6 +6,7 @@
 html,
 body {
     background-color: #fff;
+    transition: all 0.5 linear;
 }
 
 /*
@@ -37,6 +38,7 @@ a {
 a:hover {
     text-decoration: underline;
     filter: brightness(1.5);
+    transition: filter 0.5s ease-out, width 1s ease-in-out;
 }
 
 .logo {
@@ -103,16 +105,18 @@ button {
 .btn-login:hover {
     background-color: rgba(229, 229, 229, 1);
     color: #000;
+    transition: background-color 0.5s ease-out, width 1s ease-in-out;
 }
 
 .btn-register {
-    background: #27563A;
+    background-color: #27563A;
     border: 1.5px solid #27563A;
     cursor: pointer;
 }
 
 .btn-register:hover {
     filter: brightness(1.5);
+    transition: filter 0.5s ease-out, width 1s ease-in-out;
 }
 
 .screen {
@@ -184,6 +188,12 @@ input[type=submit] {
     border: none;
     cursor: pointer;
 }
+
+input[type=submit]:hover {
+    filter: brightness(1.5);
+    transition: filter 0.5s ease-out, width 1s ease-in-out;
+}
+
 
 /* Блок main */
 
@@ -294,7 +304,7 @@ a.exp-active {
     width: 419px;
     height: 478px;
     margin: 19px;
-    padding-top: 25px;
+    padding: 25px 10px 10px 10px;
 
     border-top: 1px solid rgba(229, 229, 229, 1);
     /* Линия сверху текста */
@@ -304,10 +314,12 @@ a.exp-active {
 }
 
 .clg:hover {
-    height: 485px;
+    height: 478px;
 
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 5px black;
     background-color: #f1f1f1;
+
+    transition: box-shadow 0.5s ease-out, width 1s ease-in-out;
 }
 
 img.clg-right {
@@ -377,7 +389,8 @@ img.heart {
 }
 
 .btn-center {
-    margin-top: 50px;
+    display: flex;
+    margin: 50px auto;
 }
 
 
@@ -432,6 +445,7 @@ img.heart {
 
 .block:hover {
     box-shadow: 1px 1px 5px black;
+    transition: box-shadow 0.5s ease-out, width 1s ease-in-out;
 }
 
 .block-b {
@@ -482,6 +496,11 @@ img.heart {
     width: 490px;
     height: 257px;
     margin-left: 20px;
+    
+}
+
+.feet:hover {
+    transition: box-shadow 0.5s ease-out, width 1s ease-in-out;
     box-shadow: 1px 1px 5px black;
 }
 
@@ -599,6 +618,7 @@ summary {
 
 .cnt-left:hover {
     box-shadow: 1px 1px 5px black;
+    transition: box-shadow 0.2s ease-out, width ease-in-out;
 }
 
 .cnt-form label {
@@ -813,7 +833,7 @@ summary {
 
 footer {
     background: #27563A;
-    width: 1440px;
+    width: 100vwS;
     height: auto;
     margin-top: 72px;
     padding: 72px 0 0 72px;
